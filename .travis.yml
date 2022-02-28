@@ -8,6 +8,6 @@ services:
   - docker
 
 script:
-  - docker build -f Dockerfile . -t panchajanya1999/archlinux:latest
-  - echo "$password" | docker login -u "panchajanya1999" --password-stdin
-  - docker push panchajanya1999/archlinux:latest
+  - docker build -f Dockerfile . -t AtomX/archlinux:latest
+  - echo "$password" | docker login -u "AtomX" --password-stdin
+  - docker push AtomX/archlinux:latest
