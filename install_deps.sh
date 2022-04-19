@@ -22,6 +22,10 @@ export PATH=/usr/bin/core_perl:$PATH
 # Create a symlink for z3
 ln -s /usr/lib/libz3.so /usr/lib/libz3.so.4
 
+rem() {
+    cd /usr/"$1" && while read -r line; do rm -rfv "$line"; done < "/remove-$(echo "$1" | sed "s/32//g;s/64//g").txt" && cd /
+}
+
 get() {
     if [[ "$1" =~ "atomx" ]]; then
         curl -LSs https://gitlab.com/ElectroPerf/atom-x-clang/-/archive/atom-15/atom-x-clang-atom-15.zip -o "clang".zip
