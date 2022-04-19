@@ -27,7 +27,7 @@ rem() {
 }
 
 get() {
-    if [[ "$1" =~ "atomx" ]]; then
+    if [[ "$3" == "clang" ]]; then
         curl -LSs https://gitlab.com/ElectroPerf/atom-x-clang/-/archive/atom-15/atom-x-clang-atom-15.zip -o "clang".zip
     else
         curl -LSs  "https://codeload.github.com/$1/zip/$2" -o "$3".zip
