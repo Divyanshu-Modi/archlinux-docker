@@ -38,7 +38,7 @@ get() {
 
 get mvaisakh/gcc-arm64 gcc-master gcc64
 get mvaisakh/gcc-arm gcc-master gcc32
-get atom-x-clang atom-15 clang
+get ElectroPerf/atom-x-clang atom-15 clang
 
 ln -sv /usr/clang/bin/llvm-* /usr/gcc64/bin
 ln -sv /usr/clang/bin/lld /usr/gcc64/bin
