@@ -8,6 +8,6 @@ services:
   - docker
 
 script:
-  - docker build -f Dockerfile . -t atomxorg/archlinux:latest
+  - docker build -f Dockerfile . -t atomxorg/arch-linux:latest
   - echo "$password" | docker login -u "atomxorg" --password-stdin
   - docker push atomxorg/arch-linux:latest
