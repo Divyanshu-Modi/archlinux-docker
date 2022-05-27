@@ -34,4 +34,4 @@ get() {
 
 get mvaisakh/gcc-arm64 gcc-master gcc64
 get mvaisakh/gcc-arm gcc-master gcc32
-get dakkshesh07/neutron-clang Neutron-15 clang
+get ElectroPerf/atom-x-clang atom-15 clang
