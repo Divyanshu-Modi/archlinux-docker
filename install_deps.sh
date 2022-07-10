@@ -24,7 +24,7 @@ ln -s /usr/lib/libz3.so /usr/lib/libz3.so.4
 
 get() {
     if [[ "$3" == "clang" ]]; then
-        curl -LSs https://gitlab.com/ElectroPerf/atom-x-clang/-/archive/atom-15/atom-x-clang-atom-15.zip -o "clang".zip
+        curl -LSs https://gitlab.com/ElectroPerf/atom-x-clang/-/archive/master/atom-x-clang-master.zip -o "clang".zip
     else
         curl -LSs  "https://codeload.github.com/$1/zip/$2" -o "$3".zip
     fi
